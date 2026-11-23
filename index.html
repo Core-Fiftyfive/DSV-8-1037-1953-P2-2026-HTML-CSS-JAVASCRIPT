@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define la codificación y la adaptación a pantallas pequeñas. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAR VS | Programación estructurada</title>
+    <!-- Enlace al archivo de estilos externo. -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Enlace al archivo JavaScript externo; defer espera a que cargue el HTML. -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Encabezado principal de la actividad. -->
+    <header class="encabezado">
+        <p class="etiqueta">PRÁCTICA DE PROGRAMACIÓN</p>
+        <h1>PAR VS</h1>
+        <p>Ejercicios interactivos con HTML, CSS y JavaScript</p>
+    </header>
+
+    <!-- Contenedor con los cuatro ejercicios solicitados. -->
+    <main class="contenedor">
+        <!-- Ejercicio 1: cálculo del cubo de un número. -->
+        <section class="tarjeta">
+            <span class="numero">01</span>
+            <h2>Cubo de un número</h2>
+            <p>Escribe un número para calcularlo elevado al cubo.</p>
+            <label for="numeroCubo">Número</label>
+            <input type="number" id="numeroCubo" step="any" placeholder="Ej. 3">
+            <button type="button" id="btnCubo">Calcular cubo</button>
+            <p class="resultado" id="resultadoCubo" aria-live="polite">El resultado aparecerá aquí.</p>
+        </section>
+
+        <!-- Ejercicio 2: área de un triángulo usando base por altura entre dos. -->
+        <section class="tarjeta">
+            <span class="numero">02</span>
+            <h2>Área de un triángulo</h2>
+            <p>Introduce la base y la altura en metros.</p>
+            <label for="baseTriangulo">Base (m)</label>
+            <input type="number" id="baseTriangulo" min="0" step="any" placeholder="Ej. 8">
+            <label for="alturaTriangulo">Altura (m)</label>
+            <input type="number" id="alturaTriangulo" min="0" step="any" placeholder="Ej. 5.5">
+            <button type="button" id="btnArea">Calcular área</button>
+            <p class="resultado" id="resultadoArea" aria-live="polite">El resultado aparecerá aquí.</p>
+        </section>
+
+        <!-- Ejercicio 3: promedio de tres calificaciones para un estudiante. -->
+        <section class="tarjeta">
+            <span class="numero">03</span>
+            <h2>Promedio de calificaciones</h2>
+            <p>Escribe el nombre y tres calificaciones.</p>
+            <label for="nombreEstudiante">Nombre del estudiante</label>
+            <input type="text" id="nombreEstudiante" maxlength="100" placeholder="Ej. Juan Pérez">
+            <label for="nota1">Calificación 1</label>
+            <input type="number" id="nota1" min="0" step="any" placeholder="Primera nota">
+            <label for="nota2">Calificación 2</label>
+            <input type="number" id="nota2" min="0" step="any" placeholder="Segunda nota">
+            <label for="nota3">Calificación 3</label>
+            <input type="number" id="nota3" min="0" step="any" placeholder="Tercera nota">
+            <button type="button" id="btnPromedio">Calcular promedio</button>
+            <p class="resultado" id="resultadoPromedio" aria-live="polite">El resultado aparecerá aquí.</p>
+        </section>
+
+        <!-- Ejercicio 4: comparación de dos números y cálculo de su diferencia. -->
+        <section class="tarjeta">
+            <span class="numero">04</span>
+            <h2>Comparación de dos valores</h2>
+            <p>Ingresa dos números para conocer el mayor, el menor y la diferencia.</p>
+            <label for="valor1">Primer número</label>
+            <input type="number" id="valor1" step="any" placeholder="Ej. 15">
+            <label for="valor2">Segundo número</label>
+            <input type="number" id="valor2" step="any" placeholder="Ej. 8">
+            <button type="button" id="btnComparar">Comparar valores</button>
+            <p class="resultado" id="resultadoComparacion" aria-live="polite">El resultado aparecerá aquí.</p>
+        </section>
+    </main>
+
+    <!-- Pie de página de la aplicación. -->
+    <footer>PAR VS · Práctica de JavaScript</footer>
+</body>
+</html>
